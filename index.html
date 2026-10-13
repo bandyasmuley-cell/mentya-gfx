@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MENTYA CINEMATICS | Automotive, Wedding, Birthday & Drone Shoots (@mentya.gfx_)</title>
+  <meta name="description" content="Cinematic video shoots for car delivery reveals, luxury weddings, birthday milestone parties, and 4K FPV drone cinematography by @mentya.gfx_. Turn your events into cinematic films." />
+  
+  <!-- Open Graph & Social Meta -->
+  <meta property="og:title" content="MENTYA.GFX - Cinematic Event & Automotive Films" />
+  <meta property="og:description" content="High-octane car delivery shoots, royal weddings, birthday celebrations, and 4K drone cinematography by @mentya.gfx_." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- ================= GOOGLE ANALYTICS 4 (GA4) INTEGRATION ================= -->
+  <!-- Replace G-MENTYAGFX with your Google Analytics Measurement ID (free at analytics.google.com) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MENTYAGFX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MENTYAGFX');
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              orange: '#ff5e1e',
+              amber: '#f59e0b',
+              gold: '#eab308',
+              cyan: '#06b6d4',
+              dark: '#07090e',
+              surface: '#0d111a',
+              card: 'rgba(18, 24, 38, 0.7)'
+            }
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Space Grotesk', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#07090e] text-slate-100 font-body antialiased selection:bg-[#ff5e1e] selection:text-white relative">
+
+  <!-- ================= TOP NOTIFICATION TICKER ================= -->
+  <div class="bg-gradient-to-r from-orange-600 via-amber-600 to-orange-700 py-2 px-4 text-xs font-mono font-medium text-white flex items-center justify-between overflow-hidden shadow-inner">
+    <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-white animate-rec-pulse"></span>
+        <span class="uppercase tracking-wider font-bold">NOW BOOKING 2025–2026:</span>
+        <span class="hidden md:inline text-orange-100">Car Delivery Shoots • Wedding Films • Birthday Milestone Edits • 4K FPV Drone</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://www.instagram.com/mentya.gfx_/" target="_blank" rel="noopener" class="hover:underline flex items-center gap-1 font-bold">
+          <span>@mentya.gfx_ on Instagram</span> ↗
+        </a>
+        <span class="text-orange-200">|</span>
+        <a href="#quote-calculator" class="hidden sm:inline hover:underline font-bold">Instant Quote ⚡</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600 flex items-center justify-center text-white shadow-lg shadow-orange-500/30 group-hover:scale-105 transition-transform duration-300">
+          <i data-lucide="video" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-wider font-display text-white group-hover:text-orange-400 transition-colors">
+            MENTYA<span class="text-orange-500">.GFX</span>
+          </span>
+          <span class="block text-[10px] tracking-widest text-slate-400 uppercase font-mono font-medium">Cinematography & Films</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-orange-400 transition-colors">Services</a>
+        <a href="#what-is-a-shoot" class="hover:text-orange-400 transition-colors">What is a Shoot?</a>
+        <a href="#portfolio" class="hover:text-orange-400 transition-colors">Reels & Films</a>
+        <a href="#color-grading" class="hover:text-orange-400 transition-colors">Color Grade</a>
+        <a href="#quote-calculator" class="hover:text-orange-400 transition-colors">Price Calculator</a>
+        <a href="#process" class="hover:text-orange-400 transition-colors">Process</a>
+        <a href="#gear" class="hover:text-orange-400 transition-colors">Arsenal</a>
+        <a href="#faq" class="hover:text-orange-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center gap-3">
+        <!-- Audio SFX Toggle Button -->
+        <button 
+          id="sound-fx-toggle" 
+          title="Cinematic Audio FX: Enabled"
+          class="hidden sm:flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-orange-500/50 text-xs font-mono text-slate-300 transition-all hover:bg-white/10"
+        >
+          <i data-lucide="volume-2" class="w-4 h-4 text-orange-400"></i>
+          <span id="sound-waves" class="flex items-center gap-0.5 h-3">
+            <span class="sound-bar h-2"></span>
+            <span class="sound-bar h-4"></span>
+            <span class="sound-bar h-2.5"></span>
+            <span class="sound-bar h-3.5"></span>
+          </span>
+        </button>
+
+        <!-- Instagram Profile Pill -->
+        <a 
+          href="https://www.instagram.com/mentya.gfx_/" 
+          target="_blank" 
+          rel="noopener"
+          class="hidden md:flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/30 text-xs font-mono text-pink-300 hover:border-pink-500/50 transition-all hover:scale-105"
+        >
+          <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
+          <span>@mentya.gfx_</span>
+        </a>
+
+        <!-- Book Shoot Primary CTA -->
+        <a 
+          href="#contact" 
+          class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white text-sm font-semibold shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2"
+        >
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span>Book Shoot</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button 
+          id="mobile-menu-toggle" 
+          class="lg:hidden p-2 rounded-xl bg-white/5 border border-white/10 text-slate-300 hover:text-white"
+          aria-label="Toggle Navigation Menu"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-950/95 border-b border-white/10 px-6 py-6 backdrop-blur-2xl">
+      <div class="flex flex-col gap-4 text-base font-medium text-slate-200">
+        <a href="#services" class="mobile-nav-link hover:text-orange-400 py-1">Services</a>
+        <a href="#what-is-a-shoot" class="mobile-nav-link hover:text-orange-400 py-1">What is a Shoot?</a>
+        <a href="#portfolio" class="mobile-nav-link hover:text-orange-400 py-1">Reels & Showreel</a>
+        <a href="#color-grading" class="mobile-nav-link hover:text-orange-400 py-1">Before & After Grade</a>
+        <a href="#quote-calculator" class="mobile-nav-link hover:text-orange-400 py-1">Instant Price Calculator</a>
+        <a href="#process" class="mobile-nav-link hover:text-orange-400 py-1">Our Workflow</a>
+        <a href="#gear" class="mobile-nav-link hover:text-orange-400 py-1">Camera Arsenal</a>
+        <a href="#faq" class="mobile-nav-link hover:text-orange-400 py-1">FAQ</a>
+        <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+          <a href="https://www.instagram.com/mentya.gfx_/" target="_blank" rel="noopener" class="flex items-center gap-2 text-pink-400 text-sm font-mono">
+            <i data-lucide="instagram" class="w-4 h-4"></i> Follow @mentya.gfx_ on Instagram
+          </a>
+          <a href="#contact" class="mobile-nav-link w-full py-3 text-center bg-orange-500 rounded-xl font-bold text-white shadow-lg shadow-orange-500/30">
+            Book Shoot Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-cinematic-mesh film-grid pt-8 pb-16">
+    <!-- Ambient Radial Glow -->
+    <div class="absolute inset-0 bg-radial-glow pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Text & CTA -->
+        <div class="lg:col-span-7 text-left space-y-6">
+          
+          <!-- Live Telemetry Status Pill -->
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-rec-pulse"></span>
+            <span class="text-xs font-mono font-semibold tracking-wider text-orange-400 uppercase">
+              REC • 4K 120FPS • SONY FX3 CINE LINE
+            </span>
+            <span class="text-slate-500 text-xs hidden sm:inline">|</span>
+            <span class="text-xs font-mono text-slate-300 hidden sm:inline">@mentya.gfx_</span>
+          </div>
+
+          <!-- Main Bold Headline -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold font-display leading-[1.08] tracking-tight">
+            We Don't Just Record. <br />
+            We Turn Your Moments Into <span class="text-gradient-orange">Cinema.</span>
+          </h1>
+
+          <!-- Explainer Subheadline -->
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
+            High-octane <strong class="text-white">Car Delivery Shoots</strong>, timeless <strong class="text-white">Wedding Films</strong>, unforgettable <strong class="text-white">Birthday Recaps</strong>, and breathtaking <strong class="text-white">4K FPV Drone Cinematography</strong>. 
+            We create heart-racing videos tailored for viral Instagram Reels and lifetime memories.
+          </p>
+
+          <!-- Core Value Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+            <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
+              <div class="text-xl font-bold font-mono text-orange-400">150+</div>
+              <div class="text-xs text-slate-400">Events Filmed</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
+              <div class="text-xl font-bold font-mono text-amber-400">12M+</div>
+              <div class="text-xs text-slate-400">Reel Views</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
+              <div class="text-xl font-bold font-mono text-cyan-400">4K HDR</div>
+              <div class="text-xs text-slate-400">Pro Cinema Grade</div>
+            </div>
+            <div class="p-3 rounded-xl bg-white/[0.04] border border-white/10 backdrop-blur-sm">
+              <div class="text-xl font-bold font-mono text-emerald-400">24-48H</div>
+              <div class="text-xs text-slate-400">Express Delivery</div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a 
+              href="#quote-calculator" 
+              class="px-8 py-4 rounded-2xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-bold text-base shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-3"
+            >
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+              <span>Customize Your Shoot</span>
+            </a>
+
+            <button 
+              onclick="openVideoModal(1)"
+              class="px-7 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/15 text-white font-semibold text-base backdrop-blur-md transition-all flex items-center gap-3 group"
+            >
+              <div class="w-7 h-7 rounded-full bg-orange-500 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-3.5 h-3.5 fill-current ml-0.5"></i>
+              </div>
+              <span>Watch 2025 Showreel</span>
+            </button>
+
+            <a 
+              href="https://wa.me/917620392790?text=Hi%20Mentya%20GFX!%20I%20want%20to%20inquire%20about%20a%20cinematic%20video%20shoot." 
+              target="_blank" 
+              rel="noopener"
+              class="px-4 py-4 rounded-2xl bg-[#25D366]/10 hover:bg-[#25D366]/20 border border-[#25D366]/30 text-[#25D366] font-semibold text-base transition-all flex items-center gap-2"
+              title="Chat Directly on WhatsApp"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Instagram Proof Note -->
+          <p class="text-xs text-slate-400 font-mono flex items-center gap-2">
+            <i data-lucide="badge-check" class="w-4 h-4 text-orange-400"></i>
+            Direct creator portfolio: Follow <a href="https://www.instagram.com/mentya.gfx_/" target="_blank" class="text-orange-400 underline hover:text-orange-300">@mentya.gfx_</a> on Instagram for daily trending edits
+          </p>
+
+        </div>
+
+        <!-- Right Hero Cinematic Showcase Card -->
+        <div class="lg:col-span-5 relative">
+          
+          <div class="relative rounded-3xl overflow-hidden glass-panel border border-white/15 shadow-2xl glow-box-orange p-3 group">
+            
+            <!-- Video Container / Thumbnail -->
+            <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-black cursor-pointer" onclick="openVideoModal(1)">
+              <img 
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80" 
+                alt="Mentya GFX Featured Car Delivery Shoot" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/60"></div>
+
+              <!-- Top Telemetry Header -->
+              <div class="absolute top-4 left-4 right-4 flex items-center justify-between text-xs font-mono">
+                <span class="px-3 py-1 rounded-full bg-red-600/90 text-white font-bold flex items-center gap-1.5 shadow-md">
+                  <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span> FEATURED FILM
+                </span>
+                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-slate-200">
+                  FORTUNER LEGENDER REVEAL
+                </span>
+              </div>
+
+              <!-- Center Big Play Button -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-20 h-20 rounded-full bg-orange-500/90 text-white flex items-center justify-center shadow-2xl shadow-orange-500/60 transform group-hover:scale-110 transition-transform duration-300 group-hover:bg-orange-500 border-2 border-white/40">
+                  <i data-lucide="play" class="w-8 h-8 fill-current ml-1"></i>
+                </div>
+              </div>
+
+              <!-- Bottom Stats & Sound Details -->
+              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-mono text-orange-400 font-bold uppercase tracking-wider">Automotive Cinematography</span>
+                  <span class="text-xs font-mono text-slate-300">1.4M Instagram Views 🔥</span>
+                </div>
+                <p class="text-sm font-semibold text-white leading-snug">
+                  Toyota Fortuner Midnight Delivery & Rolling Sunset Film
+                </p>
+                <div class="flex items-center justify-between text-[11px] font-mono text-slate-400 pt-1 border-t border-white/10">
+                  <span>🎥 Sony FX3 + S-Log3 Grade</span>
+                  <span>⏱️ 0:48 Cut</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating Badge 1: 4K Drone -->
+            <div class="absolute -top-4 -left-4 hidden sm:flex items-center gap-2 p-3 rounded-2xl bg-slate-900/90 border border-white/20 backdrop-blur-xl shadow-xl">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                <i data-lucide="plane" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs font-mono">
+                <div class="font-bold text-white">4K FPV Drone</div>
+                <div class="text-[10px] text-cyan-400">High-speed Chases</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Audio Sync -->
+            <div class="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2 p-3 rounded-2xl bg-slate-900/90 border border-white/20 backdrop-blur-xl shadow-xl">
+              <div class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center">
+                <i data-lucide="music" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs font-mono">
+                <div class="font-bold text-white">Bass Sound Sync</div>
+                <div class="text-[10px] text-orange-400">Viral IG Trending Beats</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT IS A "SHOOT"? EXPLAINER SECTION ================= -->
+  <section id="what-is-a-shoot" class="py-20 bg-slate-950/70 border-y border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase tracking-wider">
+          <i data-lucide="help-circle" class="w-4 h-4"></i>
+          The Mentya Philosophy
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display">
+          What Exactly Does <span class="text-gradient-orange">"Shoot"</span> Mean?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          A shoot isn't just someone standing around taking ordinary still photos. 
+          At <span class="text-white font-semibold">@mentya.gfx_</span>, a shoot means <strong>directing, filming, and producing an adrenaline-pumping or deeply emotional cinema film about your special milestone</strong>.
+        </p>
+      </div>
+
+      <!-- Comparison Grid: Photos vs. Mentya Cinematic Video Shoot -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Traditional Static Photos Card -->
+        <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/10 space-y-6">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400 uppercase tracking-widest font-semibold">Standard Approach</span>
+            <span class="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-mono">Traditional Stills</span>
+          </div>
+          <h3 class="text-2xl font-bold font-display text-slate-300">Ordinary Event Photography</h3>
+          <ul class="space-y-4 text-sm text-slate-400">
+            <li class="flex items-start gap-3">
+              <span class="text-red-400 font-bold">✕</span>
+              <span><strong>Static frozen poses:</strong> You get hundreds of unedited pictures that sit forgotten in a Google Drive folder.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-400 font-bold">✕</span>
+              <span><strong>Zero sound or energy:</strong> You can't hear the roar of the car engine, the cheers of the crowd, or the laughter of loved ones.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-400 font-bold">✕</span>
+              <span><strong>Low social media impact:</strong> Static pictures get 80% less engagement on Instagram compared to cinematic video reels.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mentya Cinematic Video Shoot Card (Glow Accent) -->
+        <div class="p-8 rounded-3xl bg-gradient-to-b from-orange-950/20 via-slate-900/60 to-slate-900/80 border border-orange-500/40 space-y-6 shadow-2xl shadow-orange-500/10 relative overflow-hidden">
+          <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-orange-400 uppercase tracking-widest font-bold">The Mentya Standard</span>
+            <span class="px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 text-xs font-mono font-bold">
+              Full Video Production
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold font-display text-white">
+            A Mentya Cinematic Video Shoot
+          </h3>
+
+          <ul class="space-y-4 text-sm text-slate-200">
+            <li class="flex items-start gap-3">
+              <span class="text-orange-400 font-bold">✓</span>
+              <span><strong>A Custom Storyboard & Director:</strong> We direct every shot — from the slow-mo curtain reveal to golden-hour roller drives.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-orange-400 font-bold">✓</span>
+              <span><strong>Hollywood Color Grading & Sound FX:</strong> High-impact speed ramping, deep bass drops, tire screech / exhaust sound sync, and pristine color grades.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-orange-400 font-bold">✓</span>
+              <span><strong>Reel-Ready for Millions of Views:</strong> Tailored in 9:16 vertical 4K for Instagram Reels & TikTok + 16:9 4K Master film for your TV.</span>
+            </li>
+          </ul>
+
+          <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs text-orange-400 font-mono">Delivered within 24 to 48 Hours</span>
+            <a href="#services" class="text-xs text-white font-bold hover:text-orange-400 transition-colors flex items-center gap-1">
+              Explore The 4 Services →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= THE 4 CORE SERVICES SECTION ================= -->
+  <section id="services" class="py-28 relative bg-[#07090e]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase tracking-wider">
+          <i data-lucide="clapperboard" class="w-4 h-4"></i>
+          What We Shoot
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          Crafted For Your Biggest Moments
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Specialized video production packages designed to give each occasion its own unique mood, soundtrack, and cinematic magic.
+        </p>
+      </div>
+
+      <!-- Service 1: CAR DELIVERY SHOOTS -->
+      <div class="mb-20 glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 relative overflow-hidden group">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-6 space-y-6 order-2 lg:order-1">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+              <i data-lucide="car" class="w-4 h-4"></i> Service 01 • Automotive Specialty
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+              Car Delivery Shoots & Automotive Edits
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              Taking delivery of your new dream machine is a lifetime achievement. We turn that moment into a blockbuster film — capturing the dramatic showroom veil drop, key handover ceremony, emotional family congratulations, and high-energy sunset rolling shots.
+            </p>
+
+            <!-- Key Features Checklist -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-400"></i>
+                <span>Showroom Veil & Ribbon Drop</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-400"></i>
+                <span>Key Handover & Champagne Slow-Mo</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-400"></i>
+                <span>Golden Hour & Night Rolling Shots</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-400"></i>
+                <span>Exhaust Sound & Bass Drop Sync</span>
+              </div>
+            </div>
+
+            <!-- Vehicles Highlight -->
+            <div class="p-4 rounded-xl bg-black/50 border border-white/10 text-xs font-mono text-slate-300">
+              <strong class="text-orange-400">Popular Shoots:</strong> Toyota Fortuner / Legender, Mahindra Thar 4x4, BMW M-Sport, Mercedes-Benz, Scorpio-N, Audi, Porsche, Tata Safari & Custom Builds.
+            </div>
+
+            <div class="pt-2 flex items-center gap-4">
+              <button onclick="openVideoModal(1)" class="px-6 py-3 rounded-xl bg-orange-500 text-white font-bold text-sm hover:bg-orange-600 transition-colors flex items-center gap-2 shadow-lg shadow-orange-500/30">
+                <i data-lucide="play" class="w-4 h-4 fill-current"></i> Watch Car Reel
+              </button>
+              <a href="#quote-calculator" class="text-sm font-semibold text-orange-400 hover:text-orange-300 flex items-center gap-1">
+                Estimate Car Shoot Cost →
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Visual Showcase -->
+          <div class="lg:col-span-6 order-1 lg:order-2">
+            <div class="relative rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl cursor-pointer" onclick="openVideoModal(1)">
+              <img 
+                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80" 
+                alt="Automotive Car Delivery Shoot" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full bg-orange-500/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-current ml-0.5"></i>
+                </div>
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white">
+                <span class="bg-black/70 px-3 py-1 rounded-full border border-white/20">🏎️ Fortuner & Thar Special</span>
+                <span class="text-orange-400">120 FPS Slow-Motion</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Service 2: WEDDING SHOOTS -->
+      <div class="mb-20 glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 relative overflow-hidden group">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Visual Showcase -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl cursor-pointer" onclick="openVideoModal(4)">
+              <img 
+                src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=80" 
+                alt="Cinematic Wedding & Pre-Wedding Shoot" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full bg-amber-500/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-current ml-0.5"></i>
+                </div>
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white">
+                <span class="bg-black/70 px-3 py-1 rounded-full border border-white/20">💍 Royal Wedding Cinema</span>
+                <span class="text-amber-400">Teaser in 48H</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold uppercase">
+              <i data-lucide="heart" class="w-4 h-4"></i> Service 02 • Wedding & Pre-Wedding Cinema
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+              Weddings, Pre-Weddings & Haldi Celebrations
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              Your wedding isn't a collection of stiff family lineups — it is a royal celebration of devotion and emotion. We craft cinematic love story teasers, high-energy Haldi color fights, Sangeet dance hype edits, and breathtaking Varmala fireworks coverage.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
+                <span>Pre-Wedding Cinematic Short Film</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
+                <span>Haldi Yellow Smoke & Petal Slow-Mo</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
+                <span>Sangeet Choreography Hype Cuts</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
+                <span>Emotional Varmala & Pheras Recaps</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/50 border border-white/10 text-xs font-mono text-slate-300">
+              <strong class="text-amber-400">What You Receive:</strong> Ultra-fast 60-second Instagram Wedding Teaser delivered within 48 hours for immediate social posting + Full 4K Cinema Film.
+            </div>
+
+            <div class="pt-2 flex items-center gap-4">
+              <button onclick="openVideoModal(4)" class="px-6 py-3 rounded-xl bg-amber-500 text-white font-bold text-sm hover:bg-amber-600 transition-colors flex items-center gap-2 shadow-lg shadow-amber-500/30">
+                <i data-lucide="play" class="w-4 h-4 fill-current"></i> Watch Wedding Film
+              </button>
+              <a href="#quote-calculator" class="text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+                Customize Wedding Package →
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Service 3: BIRTHDAY SHOOTS -->
+      <div class="mb-20 glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 relative overflow-hidden group">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-6 space-y-6 order-2 lg:order-1">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-400 text-xs font-mono font-bold uppercase">
+              <i data-lucide="cake" class="w-4 h-4"></i> Service 03 • Birthday & Milestone Celebrations
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+              Birthday Shoots & Milestone Party Films
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              From an adorable 1st birthday fairytale to a wild 18th, 21st, 25th, or 50th golden jubilee bash. We capture the grand entrance, neon party ambiance, sparkler cake cutting countdown, and candid squad moments with trending sound transitions.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                <span>Red Carpet Entry & Sparkler Walk</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                <span>Cake Smashing & Midnight Countdown</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                <span>High-Energy Dance Floor Hype</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400"></i>
+                <span>Heartwarming Family & Friend Wishes</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/50 border border-white/10 text-xs font-mono text-slate-300">
+              <strong class="text-purple-400">Perfect For:</strong> 1st Birthday Prince/Princess Films, 18th/21st Nightclub & Rooftop Bashes, 50th Jubilees, Anniversary Parties.
+            </div>
+
+            <div class="pt-2 flex items-center gap-4">
+              <button onclick="openVideoModal(6)" class="px-6 py-3 rounded-xl bg-purple-600 text-white font-bold text-sm hover:bg-purple-700 transition-colors flex items-center gap-2 shadow-lg shadow-purple-600/30">
+                <i data-lucide="play" class="w-4 h-4 fill-current"></i> Watch Birthday Reel
+              </button>
+              <a href="#quote-calculator" class="text-sm font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                Calculate Birthday Shoot →
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Visual Showcase -->
+          <div class="lg:col-span-6 order-1 lg:order-2">
+            <div class="relative rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl cursor-pointer" onclick="openVideoModal(6)">
+              <img 
+                src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80" 
+                alt="Birthday Party Video Shoot" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full bg-purple-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-current ml-0.5"></i>
+                </div>
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white">
+                <span class="bg-black/70 px-3 py-1 rounded-full border border-white/20">🎂 Party Cinematics</span>
+                <span class="text-purple-300">Neon Lights & Bass Beats</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Service 4: DRONE SHOOTS -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 relative overflow-hidden group">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Visual Showcase -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-2xl overflow-hidden aspect-video bg-black shadow-2xl cursor-pointer" onclick="openVideoModal(8)">
+              <img 
+                src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1000&q=80" 
+                alt="4K Drone & FPV Aerial Cinematography" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full bg-cyan-500/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <i data-lucide="play" class="w-6 h-6 fill-current ml-0.5"></i>
+                </div>
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-mono text-white">
+                <span class="bg-black/70 px-3 py-1 rounded-full border border-white/20">🛸 4K FPV Drone Cinematics</span>
+                <span class="text-cyan-400">DJI Avata & Mavic 3 Cine</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-bold uppercase">
+              <i data-lucide="plane" class="w-4 h-4"></i> Service 04 • 4K Aerial & FPV Cinematography
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+              Drone & Aerial Cinematography
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              The sky is our playground. We operate cinema-grade DJI Mavic 3 Pro drones for expansive landscape vistas and ultra-responsive DJI FPV drones that chase moving cars at 90 km/h, dive off clifftops, and skim inches above water surfaces.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i>
+                <span>High-Speed Dynamic Car Chases</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i>
+                <span>Massive Bird's-Eye Venue Sweeps</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i>
+                <span>Indoor & Outdoor FPV Fly-Throughs</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i>
+                <span>Apple ProRes 5.1K Resolution Capability</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-black/50 border border-white/10 text-xs font-mono text-slate-300">
+              <strong class="text-cyan-400">Equipped With:</strong> Dual drone backup rigs, high-gain telemetry, and ND-filter cinema exposure control for buttery smooth cinematic motion blur.
+            </div>
+
+            <div class="pt-2 flex items-center gap-4">
+              <button onclick="openVideoModal(8)" class="px-6 py-3 rounded-xl bg-cyan-500 text-white font-bold text-sm hover:bg-cyan-600 transition-colors flex items-center gap-2 shadow-lg shadow-cyan-500/30">
+                <i data-lucide="play" class="w-4 h-4 fill-current"></i> Watch Drone Reel
+              </button>
+              <a href="#quote-calculator" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+                Add Drone to Your Shoot →
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO / REEL SHOWCASE GALLERY ================= -->
+  <section id="portfolio" class="py-24 bg-slate-950/80 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase mb-3">
+            <i data-lucide="film" class="w-4 h-4"></i> The Video Vault
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+            Selected Films & Instagram Reels
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            Click any project to preview the video, examine the camera setup, and view the original edit on Instagram.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-white/10">
+          <button data-filter="all" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-orange-500 text-white shadow-lg shadow-orange-500/30">
+            All Shoots
+          </button>
+          <button data-filter="car-delivery" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-white/5 text-slate-300 hover:bg-white/10">
+            🏎️ Car Delivery
+          </button>
+          <button data-filter="wedding" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-white/5 text-slate-300 hover:bg-white/10">
+            💍 Weddings
+          </button>
+          <button data-filter="birthday" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-white/5 text-slate-300 hover:bg-white/10">
+            🎂 Birthdays
+          </button>
+          <button data-filter="drone" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all bg-white/5 text-slate-300 hover:bg-white/10">
+            🛸 4K Drone
+          </button>
+        </div>
+      </div>
+
+      <!-- Video Grid (Rendered Dynamically by app.js) -->
+      <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Instagram Callout Banner -->
+      <div class="mt-16 p-8 rounded-3xl bg-gradient-to-r from-purple-950/40 via-pink-950/30 to-orange-950/40 border border-purple-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-600 flex items-center justify-center text-white text-2xl shadow-lg">
+            <i data-lucide="instagram" class="w-8 h-8"></i>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold font-display text-white">Want to see daily fresh edits & behind the scenes?</h4>
+            <p class="text-sm text-slate-300">Over 50+ automotive delivery reels, car exhaust sound cuts, and client reactions are on our Instagram.</p>
+          </div>
+        </div>
+        <a 
+          href="https://www.instagram.com/mentya.gfx_/" 
+          target="_blank" 
+          rel="noopener"
+          class="px-6 py-3.5 rounded-2xl bg-white text-black font-bold text-sm hover:bg-slate-200 transition-all hover:scale-105 flex items-center gap-2 shrink-0 shadow-lg"
+        >
+          <span>Follow @mentya.gfx_</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BEFORE & AFTER COLOR GRADING SLIDER ================= -->
+  <section id="color-grading" class="py-24 bg-[#07090e] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="sliders" class="w-4 h-4"></i> Cinema Post-Production
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          The Magic of <span class="text-gradient-orange">Color Grading</span>
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          We film in flat 10-bit S-Log3 on Sony FX3 cinema cameras, preserving maximum dynamic range. In the edit studio, we craft rich contrast, neon vehicle reflections, and glowing skin tones.
+        </p>
+      </div>
+
+      <!-- Interactive Slider -->
+      <div class="max-w-4xl mx-auto">
+        <div class="relative glass-panel rounded-3xl p-3 border border-white/15 shadow-2xl">
+          
+          <div id="comparison-container" class="comparison-slider-container w-full aspect-video rounded-2xl cursor-ew-resize bg-black">
+            
+            <!-- AFTER Image (Fully Color Graded - Base layer) -->
+            <img 
+              id="comparison-after"
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" 
+              alt="Mentya Signature Cinematic Color Grade" 
+              class="comparison-after-img filter contrast-125 saturate-125 brightness-105"
+            />
+
+            <!-- BEFORE Image (Simulated Raw Flat S-Log3 - Clipped layer) -->
+            <img 
+              id="comparison-before"
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" 
+              alt="Raw Flat Camera Sensor Footage" 
+              class="comparison-before-img filter brightness-110 contrast-75 saturate-50 sepia-0"
+            />
+
+            <!-- Divider Line -->
+            <div id="comparison-divider" class="comparison-divider"></div>
+
+            <!-- Draggable Circle Handle -->
+            <div id="comparison-handle" class="comparison-handle">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5 text-white"></i>
+            </div>
+
+            <!-- Labels -->
+            <div class="absolute top-4 left-4 z-30 pointer-events-none">
+              <span class="px-3 py-1.5 rounded-lg bg-black/80 backdrop-blur-md border border-white/20 text-xs font-mono text-slate-300 uppercase">
+                ⬅ RAW LOG (Flat Sensor)
+              </span>
+            </div>
+
+            <div class="absolute top-4 right-4 z-30 pointer-events-none">
+              <span class="px-3 py-1.5 rounded-lg bg-orange-600/90 backdrop-blur-md border border-orange-400/40 text-xs font-mono text-white font-bold uppercase shadow-lg">
+                MENTYA GRADE (Hollywood Look) ➡
+              </span>
+            </div>
+
+            <!-- Bottom helper text -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-black/70 px-4 py-1.5 rounded-full border border-white/10 text-[11px] font-mono text-slate-300 backdrop-blur-md flex items-center gap-2">
+              <i data-lucide="hand" class="w-3.5 h-3.5 text-orange-400"></i> Drag left & right to compare
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Grade Specs Features -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+            <div class="text-orange-400 font-bold font-mono text-base">DaVinci Resolve</div>
+            <div class="text-xs text-slate-400 mt-1">Studio Color Suite</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+            <div class="text-amber-400 font-bold font-mono text-base">10-Bit 4:2:2</div>
+            <div class="text-xs text-slate-400 mt-1">1 Billion Colors Recorded</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+            <div class="text-cyan-400 font-bold font-mono text-base">Custom LUTs</div>
+            <div class="text-xs text-slate-400 mt-1">Signature Automotive Film Look</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+            <div class="text-emerald-400 font-bold font-mono text-base">Skin-Tone Lock</div>
+            <div class="text-xs text-slate-400 mt-1">Natural Radiant Tones</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE SHOOT ESTIMATOR & QUOTE CALCULATOR ================= -->
+  <section id="quote-calculator" class="py-24 bg-slate-950 border-t border-white/10 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="calculator" class="w-4 h-4"></i> Instant Transparent Pricing
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          Customize Your <span class="text-gradient-orange">Shoot Package</span>
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Select your event type, coverage duration, and desired cinema add-ons. Get an instant quote and book directly via WhatsApp with all details locked in.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Controls Column -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Step 1: Shoot Type -->
+          <div class="glass-panel p-6 rounded-2xl border border-white/10 space-y-3">
+            <label class="block text-sm font-bold font-display text-white uppercase tracking-wider flex items-center justify-between">
+              <span>Step 1: Choose Your Shoot Category</span>
+              <span class="text-xs font-mono text-orange-400">Required</span>
+            </label>
+            <select id="calc-shoot-type" class="w-full bg-slate-900 border border-white/20 rounded-xl px-4 py-3.5 text-white font-medium focus:border-orange-500 focus:outline-none transition-colors">
+              <option value="car-delivery" selected>🏎️ Car Delivery Shoot (Showroom Reveal + Rolling Shots) - Base ₹7,999</option>
+              <option value="wedding">💍 Wedding / Pre-Wedding Film (Haldi + Sangeet + Teaser) - Base ₹24,999</option>
+              <option value="birthday">🎂 Birthday & Milestone Celebration (Party Hype + Recaps) - Base ₹9,999</option>
+              <option value="drone">🛸 Dedicated 4K Drone Aerial Showcase (FPV + Sweeps) - Base ₹8,499</option>
+              <option value="combo">👑 All-Inclusive Cinema Master Combo (Car + Event + FPV) - Base ₹29,999</option>
+            </select>
+          </div>
+
+          <!-- Step 2: Coverage Duration -->
+          <div class="glass-panel p-6 rounded-2xl border border-white/10 space-y-3">
+            <label class="block text-sm font-bold font-display text-white uppercase tracking-wider flex items-center justify-between">
+              <span>Step 2: Coverage Duration</span>
+              <span class="text-xs font-mono text-orange-400">Select Hours</span>
+            </label>
+            <select id="calc-duration" class="w-full bg-slate-900 border border-white/20 rounded-xl px-4 py-3.5 text-white font-medium focus:border-orange-500 focus:outline-none transition-colors">
+              <option value="standard" selected>Standard Coverage (2 to 3 Hours) - Included</option>
+              <option value="half-day">Half-Day Coverage (4 to 6 Hours) - +₹4,500</option>
+              <option value="full-day">Full-Day Intensive Coverage (8 to 10 Hours) - +₹9,500</option>
+            </select>
+          </div>
+
+          <!-- Step 3: Cinematic Add-ons -->
+          <div class="glass-panel p-6 rounded-2xl border border-white/10 space-y-4">
+            <label class="block text-sm font-bold font-display text-white uppercase tracking-wider">
+              Step 3: Optional Power Add-Ons
+            </label>
+            
+            <div class="space-y-3">
+              
+              <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/10 hover:border-orange-500/40 cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="calc-addon custom-checkbox w-5 h-5 accent-orange-500 rounded cursor-pointer" data-price="3500" data-name="FPV Drone Chase Shots" />
+                  <div>
+                    <div class="text-sm font-semibold text-white">FPV High-Speed Drone Chase</div>
+                    <div class="text-xs text-slate-400">Dynamic 90km/h moving aerial follow shots</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-orange-400 font-bold">+₹3,500</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/10 hover:border-orange-500/40 cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="calc-addon custom-checkbox w-5 h-5 accent-orange-500 rounded cursor-pointer" data-price="2500" data-name="24-Hour Express Reel Delivery" checked />
+                  <div>
+                    <div class="text-sm font-semibold text-white">24-Hour Express Reel Delivery</div>
+                    <div class="text-xs text-slate-400">Post on Instagram while the event buzz is highest</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-orange-400 font-bold">+₹2,500</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/10 hover:border-orange-500/40 cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="calc-addon custom-checkbox w-5 h-5 accent-orange-500 rounded cursor-pointer" data-price="5000" data-name="Second Cine Camera Operator" />
+                  <div>
+                    <div class="text-sm font-semibold text-white">Second Cine Camera Operator</div>
+                    <div class="text-xs text-slate-400">Simultaneous wide and macro close-up coverage</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-orange-400 font-bold">+₹5,000</span>
+              </label>
+
+              <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 border border-white/10 hover:border-orange-500/40 cursor-pointer transition-colors">
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="calc-addon custom-checkbox w-5 h-5 accent-orange-500 rounded cursor-pointer" data-price="3000" data-name="4K RAW Footage Drive" />
+                  <div>
+                    <div class="text-sm font-semibold text-white">Complete 4K RAW Master Footage</div>
+                    <div class="text-xs text-slate-400">All unedited S-Log3 clips on a physical portable SSD</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-orange-400 font-bold">+₹3,000</span>
+              </label>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Live Quote Output Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel p-8 rounded-3xl border border-orange-500/40 shadow-2xl glow-box-orange space-y-6 sticky top-28 bg-gradient-to-b from-slate-900 via-slate-950 to-black">
+            
+            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+              <span class="text-xs font-mono uppercase tracking-widest text-slate-400 font-semibold">Live Quotation</span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono font-bold flex items-center gap-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> READY TO BOOK
+              </span>
+            </div>
+
+            <!-- Price Display -->
+            <div>
+              <div class="text-xs font-mono text-slate-400 uppercase tracking-wider">Estimated Investment</div>
+              <div id="calc-total-price" class="text-4xl sm:text-5xl font-black font-display text-white mt-1 text-gradient-orange">
+                ₹10,499
+              </div>
+              <div class="text-[11px] text-slate-400 font-mono mt-1">Includes filming, Sony FX3 4K recording, color grading & audio master</div>
+            </div>
+
+            <!-- Itemized Summary -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2.5 text-xs font-mono">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Shoot Service:</span>
+                <span id="summary-shoot-type" class="text-white font-semibold text-right">Car Delivery Cinematic Shoot</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Duration:</span>
+                <span id="summary-duration" class="text-white font-semibold text-right">Standard (2-3 Hours)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Add-ons:</span>
+                <span id="summary-addons" class="text-orange-400 font-semibold text-right">24-Hour Express Reel Delivery</span>
+              </div>
+              <div class="flex justify-between pt-2 border-t border-white/10">
+                <span class="text-slate-400">Delivery Format:</span>
+                <span class="text-cyan-400 font-semibold">9:16 Reel + 16:9 4K Film</span>
+              </div>
+            </div>
+
+            <!-- Book with WhatsApp Button -->
+            <a 
+              id="whatsapp-quote-btn"
+              href="#" 
+              target="_blank" 
+              rel="noopener"
+              class="w-full py-4 rounded-2xl bg-[#25D366] hover:bg-[#20ba5a] text-black font-bold text-base shadow-xl shadow-[#25D366]/20 transition-all flex items-center justify-center gap-3 group"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
+              <span>Book via WhatsApp with this Quote</span>
+            </a>
+
+            <p class="text-[11px] text-center text-slate-400 font-mono">
+              ⚡ Pre-fills your exact customized quote directly into a WhatsApp chat with @mentya.gfx_
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= THE PRODUCTION WORKFLOW ================= -->
+  <section id="process" class="py-24 bg-[#07090e] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="git-commit" class="w-4 h-4"></i> Seamless Production
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          How A Mentya Shoot Unfolds
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          From first concept discussion to having a jaw-dropping reel on your phone screen in 4 simple steps.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Step 1 -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 relative space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center font-display font-extrabold text-xl border border-orange-500/30">
+            01
+          </div>
+          <h3 class="text-xl font-bold font-display text-white">Vibe & Music Selection</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We align on your creative vision. We pick trending Instagram sounds, phonk beats, romantic orchestral songs, or hype trap anthems before shooting so every cut matches the rhythm.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 relative space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-display font-extrabold text-xl border border-amber-500/30">
+            02
+          </div>
+          <h3 class="text-xl font-bold font-display text-white">The Production Day</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            We arrive fully equipped with Sony FX3 cinema rigs, DJI Ronin RS3 gimbals, and 4K drones. We guide you naturally through slow-mo walks, curtain reveals, and car rollouts.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 relative space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-display font-extrabold text-xl border border-cyan-500/30">
+            03
+          </div>
+          <h3 class="text-xl font-bold font-display text-white">Speed Ramping & Color</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            In our editing bay, we speed-ramp slow motion to real-time, engineer deep exhaust sound design, drop bass beats at the key moment, and apply our signature Hollywood color grades.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 relative space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-display font-extrabold text-xl border border-emerald-500/30">
+            04
+          </div>
+          <h3 class="text-xl font-bold font-display text-white">Rapid 48H Delivery</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Receive your 9:16 Instagram Reel via high-speed cloud link ready to upload, collaborate with @mentya.gfx_, and watch the likes and shares flood in.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= EQUIPMENT ARSENAL ================= -->
+  <section id="gear" class="py-24 bg-slate-950/90 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="cpu" class="w-4 h-4"></i> Cinema Grade Technology
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          Our Cinema Arsenal
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          We don't shoot on phones. We bring heavy cinema gear that delivers true optical shallow depth-of-field, buttery 120fps slow-motion, and pristine low-light night capabilities.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-orange-400 font-mono text-xs uppercase font-bold tracking-wider">Primary Camera Rig</div>
+          <h4 class="text-xl font-bold font-display text-white">Sony FX3 Cinema Line</h4>
+          <p class="text-xs text-slate-400">
+            Netflix-approved 4K full-frame sensor, 120 FPS high-frame-rate, active cooling, dual base ISO for crystal-clear night delivery shoots.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-amber-400 font-mono text-xs uppercase font-bold tracking-wider">Optics & Glass</div>
+          <h4 class="text-xl font-bold font-display text-white">Sony G-Master & Anamorphic</h4>
+          <p class="text-xs text-slate-400">
+            16-35mm GM ultra-wide, 24-70mm GM II, 50mm f/1.2 & 85mm f/1.4 for razor-sharp vehicle reflections and creamy creamy background bokeh.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-cyan-400 font-mono text-xs uppercase font-bold tracking-wider">Aerial Aircraft</div>
+          <h4 class="text-xl font-bold font-display text-white">DJI Mavic 3 Cine & Avata FPV</h4>
+          <p class="text-xs text-slate-400">
+            Hasselblad 5.1K aerial camera + high-velocity FPV drone with Goggles 2 for aggressive automotive chase sequences.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-purple-400 font-mono text-xs uppercase font-bold tracking-wider">Stabilization</div>
+          <h4 class="text-xl font-bold font-display text-white">DJI RS3 Pro 3-Axis Gimbal</h4>
+          <p class="text-xs text-slate-400">
+            Carbon fiber motor gimbal with LiDAR focus tracking, ensuring zero micro-jitters during 80 km/h car tracking rollers.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-emerald-400 font-mono text-xs uppercase font-bold tracking-wider">Audio Engineering</div>
+          <h4 class="text-xl font-bold font-display text-white">DJI Mic 2 & 32-Bit Float</h4>
+          <p class="text-xs text-slate-400">
+            32-bit float internal recording guarantees zero audio distortion even during full-throttle exhaust screams and wedding loud fireworks.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+          <div class="text-blue-400 font-mono text-xs uppercase font-bold tracking-wider">Color Suite</div>
+          <h4 class="text-xl font-bold font-display text-white">DaVinci Resolve Studio</h4>
+          <p class="text-xs text-slate-400">
+            Hardware-calibrated grading monitors, custom automotive film grain emulations, and Hollywood teal-and-orange balance.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS & CLIENT REVIEWS ================= -->
+  <section class="py-24 bg-[#07090e] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="star" class="w-4 h-4 fill-current"></i> Word on the Street
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          What Our Clients Say
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg">
+          Real feedback from car enthusiasts, couples, and event creators who trusted @mentya.gfx_.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1: Car Delivery -->
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed italic">
+              "Took delivery of my new Fortuner Legender and wanted a film that looked like a Fast & Furious scene. Mentya exceeded every expectation. The curtain drop slow-mo and exhaust sound sync blew up my Instagram — crossed 400K views in 3 days!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold">
+              AM
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Aditya More</div>
+              <div class="text-xs text-orange-400 font-mono">Toyota Fortuner Delivery Shoot</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Wedding Film -->
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed italic">
+              "We booked Mentya for our Haldi and wedding teaser. The speed at which he delivered our reel was insane — we had our 4K teaser while our guests were still talking about the wedding! The drone sweep of our venue brought tears to my eyes."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+              PS
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Pooja & Siddharth</div>
+              <div class="text-xs text-amber-400 font-mono">Royal Wedding & Haldi Film</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: 21st Birthday Shoot -->
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center gap-1 text-amber-400">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed italic">
+              "For my 21st birthday rooftop party, I didn't want standard boring photos. Mentya made us look like a celebrity squad. The color grading under neon lights was on point and every friend has reposted the reel!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">
+              RK
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Rohit K.</div>
+              <div class="text-xs text-purple-400 font-mono">21st Neon Birthday Shoot</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FREQUENTLY ASKED QUESTIONS (FAQ) ================= -->
+  <section id="faq" class="py-24 bg-slate-950 border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+          <i data-lucide="help-circle" class="w-4 h-4"></i> Clarifications & Details
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold font-display">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-400 text-base">
+          Got questions about booking, turnaround times, or shoot planning? Find answers below.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between text-base font-bold text-white hover:text-orange-400 transition-colors">
+            <span>What exactly is included in a "Shoot"?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            A shoot includes complete on-site video directing and filming by @mentya.gfx_ using Sony FX3 cinema cameras, gimbals, and optional 4K drones. After filming, we edit, speed-ramp, color-grade, sync trending audio tracks, and deliver a viral-ready 9:16 Instagram Reel plus a 16:9 4K full film master.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between text-base font-bold text-white hover:text-orange-400 transition-colors">
+            <span>How fast do we receive the finished video?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Standard delivery for Instagram Reels is within <strong>48 hours</strong>. If you select our <strong>24-Hour Express Add-On</strong>, your reel is edited, color-graded, and delivered within 24 hours of wrapping the shoot so you can post while the excitement is at its peak!
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between text-base font-bold text-white hover:text-orange-400 transition-colors">
+            <span>Can we choose the song or trending audio for our reel?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Yes, absolutely! You can suggest any song, trending Instagram audio, phonk beat, or background track you love. We can also recommend high-performing trending audio that matches the tempo of your car delivery or wedding.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between text-base font-bold text-white hover:text-orange-400 transition-colors">
+            <span>Do you travel for out-of-city shoots?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            Yes! We film across cities for destination weddings, car road trip shoots, showroom deliveries, and outdoor drone assignments. Outstation travel and stay logistics are billed transparently at actuals.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item glass-panel rounded-2xl border border-white/10 overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between text-base font-bold text-white hover:text-orange-400 transition-colors">
+            <span>How does the Car Delivery shoot work at the showroom?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-4">
+            We arrive 30 minutes before your scheduled showroom delivery time. We coordinate with the showroom staff to time the veil drop, confetti blast, and key handover. Afterwards, we take your car out for golden-hour rolling shots and night cruise cinematography.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BOOKING & INQUIRY FORM SECTION ================= -->
+  <section id="contact" class="py-24 bg-[#07090e] border-t border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Contact Info & Direct Links -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-mono font-bold uppercase">
+            <i data-lucide="send" class="w-4 h-4"></i> Get in Touch
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display leading-tight">
+            Ready to Create Something <span class="text-gradient-orange">Unforgettable?</span>
+          </h2>
+
+          <p class="text-slate-300 text-base leading-relaxed">
+            Fill in the shoot inquiry details, or hit the direct WhatsApp link to lock in your date before dates fill up. We only take a limited number of shoots per week to ensure top-tier cinematic quality.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <a 
+              href="https://www.instagram.com/mentya.gfx_/" 
+              target="_blank" 
+              rel="noopener"
+              class="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-pink-500/40 transition-all group"
+            >
+              <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-600 flex items-center justify-center text-white text-xl">
+                <i data-lucide="instagram" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-xs font-mono text-slate-400">Instagram Handle</div>
+                <div class="text-base font-bold text-white group-hover:text-pink-400 transition-colors">@mentya.gfx_</div>
+              </div>
+            </a>
+
+            <a 
+              href="https://wa.me/917620392790?text=Hi%20Mentya%20GFX!%20I%20want%20to%20book%20a%20shoot." 
+              target="_blank" 
+              rel="noopener"
+              class="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-emerald-500/40 transition-all group"
+            >
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                <i data-lucide="phone-call" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-xs font-mono text-slate-400">Instant WhatsApp Booking</div>
+                <div class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors">+91 76203 92790</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Interactive Inquiry Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/15 shadow-2xl relative">
+            
+            <h3 class="text-2xl font-bold font-display text-white mb-6">
+              Lock In Your Shoot Date
+            </h3>
+
+            <div id="form-feedback" class="mb-4"></div>
+
+            <form id="booking-inquiry-form" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Your Name *</label>
+                  <input 
+                    type="text" 
+                    id="form-name" 
+                    required 
+                    placeholder="e.g. Rahul Sharma" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">WhatsApp / Phone *</label>
+                  <input 
+                    type="tel" 
+                    id="form-phone" 
+                    required 
+                    placeholder="e.g. +91 98765 43210" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Shoot Type *</label>
+                  <select 
+                    id="form-service" 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                  >
+                    <option value="Car Delivery Shoot">🏎️ Car Delivery Shoot</option>
+                    <option value="Wedding / Pre-Wedding Film">💍 Wedding / Pre-Wedding Cinema</option>
+                    <option value="Birthday Shoot">🎂 Birthday / Milestone Party</option>
+                    <option value="4K Drone Cinematics">🛸 4K Drone & FPV Aerial</option>
+                    <option value="Custom Combo Package">👑 Custom Combo Package</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Target Shoot Date *</label>
+                  <input 
+                    type="date" 
+                    id="form-date" 
+                    required 
+                    class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">City & Venue Location *</label>
+                <input 
+                  type="text" 
+                  id="form-city" 
+                  required 
+                  placeholder="e.g. Pune / Mumbai / Showroom Location" 
+                  class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Notes, Car Model, or Vision</label>
+                <textarea 
+                  id="form-notes" 
+                  rows="3" 
+                  placeholder="Tell us about the vehicle (e.g. Fortuner Legender delivery at Toyota), wedding venue, or special ideas..." 
+                  class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white focus:border-orange-500 focus:outline-none text-sm"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                class="w-full py-4 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-bold text-base shadow-xl shadow-orange-500/30 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+              >
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                <span>Send Shoot Inquiry to WhatsApp</span>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-black border-t border-white/10 py-12 text-slate-400 text-xs font-mono">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-orange-500 text-white flex items-center justify-center font-bold">
+          M
+        </div>
+        <div>
+          <span class="text-sm font-bold text-white font-display">MENTYA<span class="text-orange-500">.GFX</span></span>
+          <p class="text-[11px] text-slate-500">© 2026 MENTYA FILMS. All rights reserved.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-white transition-colors">Reels</a>
+        <a href="#quote-calculator" class="hover:text-white transition-colors">Pricing</a>
+        <a href="https://www.instagram.com/mentya.gfx_/" target="_blank" rel="noopener" class="text-orange-400 hover:underline">
+          Instagram: @mentya.gfx_
+        </a>
+        <button 
+          onclick="openAnalyticsModal()" 
+          class="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 hover:border-orange-500/50 text-slate-300 hover:text-white flex items-center gap-1 text-[11px] transition-colors"
+          title="View Website Analytics"
+        >
+          <i data-lucide="bar-chart-2" class="w-3.5 h-3.5 text-orange-400"></i>
+          <span>Analytics</span>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= BUILT-IN ANALYTICS DASHBOARD MODAL ================= -->
+  <div id="analytics-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-2xl p-4 sm:p-6" onclick="if(event.target === this) closeAnalyticsModal()">
+    <div class="modal-content relative w-full max-w-2xl bg-slate-950 rounded-3xl border border-white/20 shadow-2xl overflow-hidden p-6 sm:p-8 space-y-6">
+      
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center">
+            <i data-lucide="activity" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold font-display text-white">Website Live Analytics</h3>
+            <p class="text-xs text-slate-400 font-mono">Real-time performance tracking for @mentya.gfx_</p>
+          </div>
+        </div>
+        <button onclick="closeAnalyticsModal()" class="w-8 h-8 rounded-full bg-white/10 text-slate-300 hover:text-white flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Real-Time Metrics Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+          <div id="metric-pageviews" class="text-2xl font-black font-mono text-orange-400">1</div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">Page Visits</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+          <div id="metric-whatsapp" class="text-2xl font-black font-mono text-emerald-400">0</div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">WhatsApp Clicks</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+          <div id="metric-reels" class="text-2xl font-black font-mono text-amber-400">0</div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">Reels Played</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
+          <div id="metric-quotes" class="text-2xl font-black font-mono text-cyan-400">0</div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">Quotes Generated</div>
+        </div>
+      </div>
+
+      <!-- Professional Analytics Integrations Guide -->
+      <div class="p-5 rounded-2xl bg-slate-900 border border-white/10 space-y-3 text-xs text-slate-300">
+        <h4 class="font-bold font-display text-white text-sm flex items-center gap-2">
+          <i data-lucide="globe" class="w-4 h-4 text-orange-400"></i>
+          Connect Google Analytics 4 (GA4) or Cloudflare
+        </h4>
+        <p class="leading-relaxed">
+          This site is pre-configured with Google Analytics 4 hooks. To track global visitors from Instagram, countries, and live active users:
+        </p>
+        <ol class="list-decimal list-inside space-y-1.5 text-slate-400 font-mono text-[11px]">
+          <li>Create a free account at <strong class="text-white">analytics.google.com</strong></li>
+          <li>Copy your Measurement ID (e.g. <span class="text-orange-400">G-XXXXXXX</span>)</li>
+          <li>Paste it into <span class="text-white">index.html</span> (line 21 & 25)</li>
+          <li>You will see live visitors, city maps, and Instagram conversion rates!</li>
+        </ol>
+      </div>
+
+      <div class="flex items-center justify-between pt-2">
+        <button onclick="resetLocalAnalytics()" class="text-xs text-slate-500 hover:text-red-400 font-mono transition-colors">
+          Reset Counter
+        </button>
+        <button onclick="closeAnalyticsModal()" class="px-5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold text-xs transition-colors">
+          Done
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= VIDEO PLAYER MODAL ================= -->
+  <div id="video-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-2xl p-4 sm:p-6" onclick="if(event.target === this) closeVideoModal()">
+    <div class="modal-content relative w-full max-w-4xl bg-slate-950 rounded-3xl border border-white/20 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 border-b border-white/10 flex items-center justify-between bg-slate-900/80">
+        <div class="flex items-center gap-3">
+          <span id="modal-category" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-orange-500/20 text-orange-400 border border-orange-500/30">
+            Car Delivery
+          </span>
+          <h3 id="modal-title" class="text-base sm:text-lg font-bold font-display text-white truncate max-w-[280px] sm:max-w-md">
+            Video Title
+          </h3>
+        </div>
+        <button onclick="closeVideoModal()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Video Player View -->
+      <div class="relative bg-black aspect-video w-full flex items-center justify-center overflow-hidden">
+        <video 
+          id="modal-video" 
+          controls 
+          autoplay 
+          loop 
+          playsinline 
+          class="w-full h-full object-contain"
+        ></video>
+      </div>
+
+      <!-- Modal Footer Metadata -->
+      <div class="p-5 sm:p-6 bg-slate-900/90 space-y-4 overflow-y-auto">
+        <p id="modal-description" class="text-sm text-slate-300 leading-relaxed"></p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-slate-400 block text-[10px]">CAMERA RIG</span>
+            <span id="modal-gear" class="text-white font-semibold">Sony FX3</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-slate-400 block text-[10px]">FRAME RATE</span>
+            <span id="modal-fps" class="text-orange-400 font-semibold">4K 120FPS</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-slate-400 block text-[10px]">SOUND DESIGN</span>
+            <span id="modal-audio" class="text-cyan-400 font-semibold">Phonk Bass Sync</span>
+          </div>
+          <div class="p-3 rounded-xl bg-black/40 border border-white/10">
+            <span class="text-slate-400 block text-[10px]">SOCIAL REACH</span>
+            <span id="modal-views" class="text-emerald-400 font-semibold">1.4M Views</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <a 
+            id="modal-ig-link" 
+            href="https://www.instagram.com/mentya.gfx_/" 
+            target="_blank" 
+            rel="noopener"
+            class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold text-xs flex items-center gap-2 hover:opacity-95"
+          >
+            <i data-lucide="instagram" class="w-4 h-4"></i>
+            <span>Watch Original Reel on Instagram</span>
+          </a>
+
+          <button onclick="closeVideoModal()" class="px-4 py-2 rounded-xl bg-white/10 text-slate-300 text-xs font-mono hover:text-white">
+            Close Viewer
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a 
+    href="https://wa.me/917620392790?text=Hi%20Mentya%20GFX!%20I'm%20interested%20in%20booking%20a%20shoot%20for%20my%20event." 
+    target="_blank" 
+    rel="noopener"
+    class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] text-black flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all whatsapp-pulse"
+    title="Instant WhatsApp Inquiry with @mentya.gfx_"
+  >
+    <i data-lucide="message-circle" class="w-7 h-7 fill-current"></i>
+  </a>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
